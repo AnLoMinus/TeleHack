@@ -1,8 +1,8 @@
 <div align="center">
 
 # TeleHack
-TeleFight - Telegram Tools, Packs, Bots, Info, Administration, Scrapers, Adders, and more..
-  
+TeleHack - Telegram Tools, Packs, Bots, Info, Administration, Scrapers, Adders, and more..
+
 <img width="642" alt="image" src="https://user-images.githubusercontent.com/51442719/163094401-83d938c3-96a6-4e65-ac76-cdaa9b634c75.png">
 
 </div>
@@ -10,21 +10,21 @@ TeleFight - Telegram Tools, Packs, Bots, Info, Administration, Scrapers, Adders,
   ## How to use TeleHack ?
 -  [x] Starting Tool: `sh TeleHack start`
 -  [x] Installing specific tool: `sh TeleHack install toolname`
--  [x] Remove TeleFight from System: `sh TeleHack remove`
+-  [x] Remove TeleHack from System: `sh TeleHack remove`
 
-TeleFight is very simple and easy to use tool, its available in both CLI and manual mode.
+TeleHack is very simple and easy to use tool, its available in both CLI and manual mode.
 
 ### CLI Mode :
-`TeleFight -h` or `TeleFight help` for help.
+`TeleHack -h` or `TeleHack help` for help.
 
 Options :
-- `TeleFight install [tool_name]` install any tool.
-- `TeleFight -i [tool_name]` install any tool.
-- `TeleFight search [tool_name]` search any tool.
-- `TeleFight -s [tool_name]` search any tool.
-- `TeleFight list` list all tools.
-- `TeleFight list -a` list all tools.
-- `TeleFight -l` list all tools.
-- `TeleFight -l -a` list all tools.
-- `TeleFight help` get help.
-- `TeleFight -h` get help.
+- `TeleHack install [tool_name]` install any tool.
+- `TeleHack -i [tool_name]` install any tool.
+- `TeleHack search [tool_name]` search any tool.
+- `TeleHack -s [tool_name]` search any tool.
+- `TeleHack list` list all tools.
+- `TeleHack list -a` list all tools.
+- `TeleHack -l` list all tools.
+- `TeleHack -l -a` list all tools.
+- `TeleHack help` get help.
+- `TeleHack -h` get help.
