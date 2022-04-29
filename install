@@ -1,7 +1,7 @@
 #!/bin/sh
-# Name : TeleFight
+# Name : TeleHack
 # Date : April 2022
-# Description : TeleFight is a TeleFight tools installer and package manager for hacker's.
+# Description : TeleHack is a TeleHack tools installer and package manager for hacker's.
 
 # |
 nc="\033[00m"
@@ -57,7 +57,7 @@ Banner(){
   ▒         ▀▀█▀▀ █▀▀█ █▀▀█ █   █▀▀             ▒
   ▒           █   █  █ █  █ █   ▀▀█             ▒
   ▒           ▀   ▀▀▀▀ ▀▀▀▀ ▀▀▀ ▀▀▀$ORANGE v0.0.0.1    ▒
-  ▒ https://www.github.com/Anlominus/TeleFight▒
+  ▒ https://www.github.com/Anlominus/TeleHack▒
   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
   "
 }
@@ -91,12 +91,12 @@ elif [ -d /etc ]; then
 fi
 
 # configuration files
-if [ -d $conf_dir/TeleFight ]; then
-  if [ -e $conf_dir/TeleFight/data/tools.dat ]; then
-    tools_data="$conf_dir/TeleFight/data/tools.dat"
+if [ -d $conf_dir/TeleHack ]; then
+  if [ -e $conf_dir/TeleHack/data/tools.dat ]; then
+    tools_data="$conf_dir/TeleHack/data/tools.dat"
   fi
-  if [ -e $conf_dir/TeleFight/data/category.dat ]; then
-    category_data="$conf_dir/TeleFight/data/category.dat"
+  if [ -e $conf_dir/TeleHack/data/category.dat ]; then
+    category_data="$conf_dir/TeleHack/data/category.dat"
   fi
 else
   if [ -e data/tools.dat ]; then
@@ -156,67 +156,67 @@ for each_pac in "wget" "curl" "git"; do
 done
 
 # removing old one
-if [ -e $bin/TeleFight ]; then
-  if [ -d $conf_dir/TeleFight ]; then
+if [ -e $bin/TeleHack ]; then
+  if [ -d $conf_dir/TeleHack ]; then
     if [ $sudo ]; then
-      $sudo rm -rf $bin/TeleFight
-      $sudo rm -rf $conf_dir/TeleFight
+      $sudo rm -rf $bin/TeleHack
+      $sudo rm -rf $conf_dir/TeleHack
     else
-      rm -rf $bin/TeleFight
-      rm -rf $conf_dir/TeleFight
+      rm -rf $bin/TeleHack
+      rm -rf $conf_dir/TeleHack
     fi
   fi
 fi
 
-# install TeleFight
+# install TeleHack
 if [ $0 = "install" -o $0 = "./install" ]; then
-  if [ -e TeleFight ]; then
+  if [ -e TeleHack ]; then
     if [ $sudo ]; then
-      $sudo mv -v TeleFight $bin
-      $sudo chmod +x $bin/TeleFight
+      $sudo mv -v TeleHack $bin
+      $sudo chmod +x $bin/TeleHack
     else
-      mv -v TeleFight $bin
-      chmod +x $bin/TeleFight
+      mv -v TeleHack $bin
+      chmod +x $bin/TeleHack
     fi
   fi
   cd ..
-  if [ -d TeleFight ]; then
+  if [ -d TeleHack ]; then
     if [ $sudo ]; then
-    $sudo mv -v TeleFight $conf_dir
+    $sudo mv -v TeleHack $conf_dir
     else
-      mv -v TeleFight $conf_dir
+      mv -v TeleHack $conf_dir
     fi
   fi
 else
-  if [ -e TeleFight/TeleFight ]; then
+  if [ -e TeleHack/TeleHack ]; then
     if [ $sudo ]; then
-      $sudo mv -v TeleFight/TeleFight $bin
-      $sudo chmod +x $bin/TeleFight
+      $sudo mv -v TeleHack/TeleHack $bin
+      $sudo chmod +x $bin/TeleHack
     else
-      mv -v TeleFight/TeleFight $bin
-      chmod +x $bin/TeleFight
+      mv -v TeleHack/TeleHack $bin
+      chmod +x $bin/TeleHack
     fi
   fi
-  if [ -d TeleFight ]; then
+  if [ -d TeleHack ]; then
     if [ $sudo ]; then
-    $sudo mv -v TeleFight $conf_dir
+    $sudo mv -v TeleHack $conf_dir
     else
-      mv -v TeleFight $conf_dir
+      mv -v TeleHack $conf_dir
     fi
   fi
 fi
 
-# check TeleFight is installed or not
-if [ -e $bin/TeleFight ]; then
-  if [ -d $conf_dir/TeleFight ]; then
+# check TeleHack is installed or not
+if [ -e $bin/TeleHack ]; then
+  if [ -d $conf_dir/TeleHack ]; then
     clear
     echo "$logo"
-    echo " ${purple}TeleFight ${green}installed successfully !!"
-    echo " ${green}type ${nc}'TeleFight -h'${green} for more.${nc}"
+    echo " ${purple}TeleHack ${green}installed successfully !!"
+    echo " ${green}type ${nc}'TeleHack -h'${green} for more.${nc}"
   else
     clear
     echo "$logo"
-    echo " ${red}Sorry ${cyan}: TeleFight ${red}is not installed !!"
+    echo " ${red}Sorry ${cyan}: TeleHack ${red}is not installed !!"
     echo " ${green}Please try again${nc}"
   fi
 fi
