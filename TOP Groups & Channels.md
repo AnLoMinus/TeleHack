@@ -11,5 +11,6 @@
 ### Telegram Channels
 - [Free Courses Certificates](https://t.me/freecourseswithcertificates)
 - [Free Udemy Courses Udemy Coupons](https://t.me/tutorialbar_udemy_coupons)
+- [Real Discount Coupons](https://t.me/real_discount)
 
 
